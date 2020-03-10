@@ -11,15 +11,19 @@
 9. What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser: 1) It defines the protocol as "HTTP" 2) the browser translate the hostname "somesite.com" to an IP address 3) the default port 80 will be selected 4) the resource string "some/page.html" is used to find the target file. 
 
 ### Part Two: Practice Tools
-
 1. Using curl, make a GET request to the icanhazdadjoke.com API to find all jokes involving the word “pirate”
 API: https://icanhazdadjoke.com/api
+
 Terminal: curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"
+
 Output: `{"current_page":1,"limit":20,"next_page":1,"previous_page":1,"results":[{"id":"QuscibaMClb","joke":"What does a pirate pay for his corn? A buccaneer!"},{"id":"2gii3LeN7Ed","joke":"Why couldn't the kid see the pirate movie? Because it was rated arrr!"},{"id":"SvzIBAQS0Dd","joke":"What did the pirate say on his 80th birthday? Aye Matey!"},{"id":"SnOf2gqjiqc","joke":"Why are pirates called pirates? Because they arrr!"},{"id":"exXSCtkOKe","joke":"Why do pirates not know the alphabet? They always get stuck at \"C\"."}],"search_term":"pirate","status":200,"total_jokes":5,"total_pages":1}`
 
 2. Use dig to find what the IP address is for icanhazdadjoke.com
+
 Terminal: dig icanhazdadjoke.com
+
 Output: 
+
 icanhazdadjoke.com.	229	IN	A	104.27.179.209
 icanhazdadjoke.com.	229	IN	A	104.27.178.209
 
